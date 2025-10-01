@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Siswa SMK</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Siswa SMK</h2>
+    <form action="/submit" method="post">
+        <!-- Nama Lengkap -->
+        <label for="namaLengkap">Nama Lengkap:</label><br>
+        <input type="text" id="namaLengkap" name="namaLengkap" size="50" required><br><br>
+
+        <!-- Tempat Lahir -->
+        <label for="tempatLahir">Tempat Lahir:</label><br>
+        <input type="text" id="tempatLahir" name="tempatLahir" size="30" required><br><br>
+
+        <!-- Tanggal Lahir -->
+        <label for="tanggalLahir">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggalLahir" name="tanggalLahir" required><br><br>
+
+        <!-- Jenis Kelamin -->
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki" name="jenisKelamin" value="Laki-laki" required>
+        <label for="laki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <!-- Alamat -->
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Sekolah Asal -->
+        <label for="sekolahAsal">Sekolah Asal:</label><br>
+        <input type="text" id="sekolahAsal" name="sekolahAsal" size="50" required><br><br>
+
+        <!-- Program Keahlian yang Dipilih -->
+        <label for="programKeahlian">Program Keahlian:</label><br>
+        <select id="programKeahlian" name="programKeahlian" required>
+            <option value="">--Pilih Program Keahlian--</option>
+            <option value="TKJ">Teknik Komputer dan Jaringan (TKJ)</option>
+            <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+            <option value="OTKP">Otomatisasi Tata Kelola Perkantoran (OTKP)</option>
+            <option value="MM">Multimedia (MM)</option>
+            <option value="AKL">Akuntansi dan Keuangan Lembaga (AKL)</option>
+        </select><br><br>
+
+        <!-- Nomor Telepon -->
+        <label for="telepon">Nomor Telepon:</label><br>
+        <input type="tel" id="telepon" name="telepon" size="20" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" size="30" required><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>
